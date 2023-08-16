@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="webti">Library</div>
+        </div>
+        <div class="sidebar">
+            <div class="librarylog"></div>
+            <div class="button">
+                <button class="addbut">Add Book</button>
+            </div>
+        </div>
+        <div class="lib">
+        </div>
+        <dialog class="dia">
+            <form>
+                <fieldset>
+                    <label for="title">Book Title</label>
+                    <input type="text" id="title" name="title" required>
+                </fieldset>
+
+                <fieldset>
+                    <label for="author">Author</label>
+                    <input type="text" id="author" name="author" required>
+                </fieldset>
+
+                <fieldset>
+                    <label for="pages">Pages</label>
+                    <input type="number" id="pages" name="pages" step="1" min="1" required>
+                </fieldset>
+
+                <fieldset id="reee">
+                    <legend>Have you read this book?</legend>
+                    <label for="read">Yes</label>
+                    <input type="radio" id="Read" name="read" value="Read">
+                    <label for="read">No</label>
+                    <input type="radio" id="Not Read" name="read" value="Not Read">
+
+                </fieldset>
+
+                <input type="submit" class="donezo">
+            </form>
+        </dialog>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>
